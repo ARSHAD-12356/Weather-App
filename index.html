@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./script.js" defer></script>
+</head>
+<body class="bg-gray-600 h-screen w-screen flex justify-center items-center">
+    <div class="main-container border-solid border-2 border-red-500 w-96 h-full bg-sky-200 " >
+      <div>
+        <h1 class="ml-16 text-4xl" >ArshXWeather</h1>
+      </div>
+    <div class="header-box flex justify-around">
+        <input type="text" placeholder="Enter Your Location" class="mt-4 text-lg w-5/6 h-12 rounded-2xl  ml-5">
+         <button class="srch-btn bg-white mt-4 mr-8 ml-2 rounded-full ... w-14 hover:bg-sky-500"><i class="fa-solid fa-magnifying-glass"></i></button>
+       
+    </div>
+    <div class="locationnotfound hidden  flex-col mt-5">
+      <h1 class="text-center text-lg">Sorry! location not found!!!</h1>
+      <img src="./404.png" alt="" class="w-60 h-64 ml-20">
+    </div>
+    <div class="weather-box flex flex-col justify-center items-center">
+        <img src="./cloud.png" alt="" class="w-60 h-64 w-img">
+        <div class="temp text-4xl mt-3 text-black font-semibold">0°C</div>
+        <p class="description text-2xl text-black"></p>
+        <p class="feelslike text-base text-black"></p>
+    </div>
+    <div class="weather-detail mt-3 ml-4 flex justify-between text-xl font-medium">
+        <div class="humidity flex">
+            <i class="fa-sharp fa-solid fa-droplet"></i>
+          <div class="h-d text-xl ml-3 mt-0">
+            <span class="humidity-value fs-3">0%</span>
+            <p class="fs-4">Humidity</p>
+          </div>
+        </div>
+        <div class="wind-speed flex mr-2 ml-2 fs-6">
+            <i class="fa-solid fa-wind"></i>
+          <div class="w-d">
+            <h1 class="wind-value ml-2 ">0Km/H</h1>
+            <p>Wind-Speed</p>
+          </div>
+        </div>
+    </div>
+    </div>
+
+  
+    <script src="https://kit.fontawesome.com/5f6e88bb43.js" crossorigin="anonymous"></script>
+</body>
+</html>
